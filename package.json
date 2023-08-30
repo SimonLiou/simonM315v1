@@ -1,20 +1,11 @@
 {
-    "name": "m3l15v1",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "test": "jest"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "date-fns": "^2.30.0",
-      "date-fns-tz": "^2.0.0",
-      "winston": "^3.10.0"
-    },
-    "devDependencies": {
-      "jest": "^29.6.3",
-      "serverless-offline": "^12.0.4"
-    }
-  }
+  "name": "simonm315v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
