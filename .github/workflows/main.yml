@@ -89,3 +89,4 @@ jobs:
           for var in $(env | grep '^SIMONLIOU78_'); do
             echo "Variable: $var"
           done
+          
