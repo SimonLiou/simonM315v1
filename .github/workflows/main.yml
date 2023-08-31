@@ -77,11 +77,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: Retrieve secret from AWS
         uses: aws-actions/aws-secretsmanager-get-secrets@v1
-        
-- name: Show Secret with AWS CLI
-  run: |
-    aws secretsmanager get-secret-value --secret-id simonliou78 
-    with:
+        with:
           secret-ids: |
           simonliou78*
         env:
@@ -93,4 +89,3 @@ jobs:
           for var in $(env | grep '^SIMONLIOU78_'); do
             echo "Variable: $var"
           done
-          
