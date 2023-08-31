@@ -17,15 +17,21 @@ jobs:
     steps:
       - name: Checkout repo code
         uses: actions/checkout@v3
-      - name: Install dependencies
+      - name: Clean VM
+        run: npm cache clean --force
+      - name: Run installation of dependencies command
         run: npm install
-  
+
   unit-testing:
     runs-on: ubuntu-latest
     needs: install-dependencies
     steps:
-      - name: Checkout repo code
+      - name: Checkout repository code
         uses: actions/checkout@v3
+      - name: Run installation of dependencies command
+        run: npm install
+      - name: Install jest
+        run: npm install jest
       - name: Install dependencies
         run: npm install
       - name: Run unit testing
